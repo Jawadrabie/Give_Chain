@@ -1,0 +1,22 @@
+# This file tracks properties of this Flutter project.
+version:
+  revision: "generated-with-flutter-3.44-compatible-layout"
+  channel: "stable"
+project_type: app
+migration:
+  platforms:
+    - platform: root
+      create_revision: "generated"
+      base_revision: "generated"
+    - platform: android
+      create_revision: "generated"
+      base_revision: "generated"
+    - platform: ios
+      create_revision: "generated"
+      base_revision: "generated"
+    - platform: web
+      create_revision: "generated"
+      base_revision: "generated"
+  unmanaged_files:
+    - 'lib/main.dart'
+    - 'ios/Runner.xcodeproj/project.pbxproj'

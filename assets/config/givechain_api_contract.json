@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 4,
+  "generatedAt": "2026-08-23T00:00:00Z",
+  "source": "API_MOBILE.md supplied by backend team (v2 update)",
+  "baseUrl": "https://givechain.runasp.net",
+  "openApiPath": "/swagger/mobile/swagger.json",
+  "responseEnvelope": [
+    "message",
+    "data",
+    "errors",
+    "isSuccess"
+  ],
+  "confirmedOperations": {
+    "login": {
+      "method": "POST",
+      "path": "/api/mobile/auth/login",
+      "authenticated": false,
+      "contentType": "application/json"
+    },
+    "register": {
+      "method": "POST",
+      "path": "/api/mobile/auth/register",
+      "authenticated": false,
+      "contentType": "multipart/form-data"
+    },
+    "forgotPassword": {
+      "method": "POST",
+      "path": "/api/mobile/auth/forgot-password",
+      "authenticated": false
+    },
+    "resetPassword": {
+      "method": "POST",
+      "path": "/api/mobile/auth/reset-password",
+      "authenticated": false
+    },
+    "infoFields": {
+      "method": "GET",
+      "path": "/api/mobile/auth/info-fields",
+      "authenticated": false
+    },
+    "home": {
+      "method": "GET",
+      "path": "/api/mobile/home",
+      "authenticated": false
+    },
+    "charities": {
+      "method": "GET",
+      "path": "/api/mobile/charities",
+      "authenticated": false,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "charityById": {
+      "method": "GET",
+      "path": "/api/mobile/charities/{id}",
+      "authenticated": false
+    },
+    "charityCampaigns": {
+      "method": "GET",
+      "path": "/api/mobile/charities/{id}/campaigns",
+      "authenticated": false,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "charityCases": {
+      "method": "GET",
+      "path": "/api/mobile/charities/{id}/cases",
+      "authenticated": false,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "charityBenefits": {
+      "method": "GET",
+      "path": "/api/mobile/charities/{id}/benefit-types",
+      "authenticated": false
+    },
+    "campaigns": {
+      "method": "GET",
+      "path": "/api/mobile/campaigns",
+      "authenticated": false,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "campaignByCharity": {
+      "method": "GET",
+      "path": "/api/mobile/campaigns/by-charity/{charityId}",
+      "authenticated": false,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "campaignById": {
+      "method": "GET",
+      "path": "/api/mobile/campaigns/{id}",
+      "authenticated": false
+    },
+    "campaignDonate": {
+      "method": "POST",
+      "path": "/api/mobile/campaigns/{id}/donate",
+      "authenticated": true,
+      "contentType": "multipart/form-data"
+    },
+    "cases": {
+      "method": "GET",
+      "path": "/api/mobile/cases",
+      "authenticated": false,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "caseByCharity": {
+      "method": "GET",
+      "path": "/api/mobile/cases/by-charity/{charityId}",
+      "authenticated": false,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "caseById": {
+      "method": "GET",
+      "path": "/api/mobile/cases/{id}",
+      "authenticated": false
+    },
+    "caseDonate": {
+      "method": "POST",
+      "path": "/api/mobile/cases/{id}/donate",
+      "authenticated": true,
+      "contentType": "multipart/form-data"
+    },
+    "donationsCreate": {
+      "method": "POST",
+      "path": "/api/mobile/donations",
+      "authenticated": true,
+      "contentType": "multipart/form-data"
+    },
+    "donationsHistory": {
+      "method": "GET",
+      "path": "/api/mobile/donations",
+      "authenticated": true,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "donationsTrace": {
+      "method": "GET",
+      "path": "/api/mobile/donations/trace",
+      "authenticated": true
+    },
+    "donationTrace": {
+      "method": "GET",
+      "path": "/api/mobile/donations/{id}/trace",
+      "authenticated": true
+    },
+    "benefitsCreate": {
+      "method": "POST",
+      "path": "/api/mobile/benefits",
+      "authenticated": true
+    },
+    "benefitsMine": {
+      "method": "GET",
+      "path": "/api/mobile/benefits",
+      "authenticated": true,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "complaintsCreate": {
+      "method": "POST",
+      "path": "/api/mobile/complaints",
+      "authenticated": true,
+      "contentType": "multipart/form-data"
+    },
+    "complaintsMine": {
+      "method": "GET",
+      "path": "/api/mobile/complaints",
+      "authenticated": true,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "complaintById": {
+      "method": "GET",
+      "path": "/api/mobile/complaints/{id}",
+      "authenticated": true
+    },
+    "notifications": {
+      "method": "GET",
+      "path": "/api/mobile/notifications",
+      "authenticated": true,
+      "query": [
+        "page",
+        "pageSize"
+      ]
+    },
+    "notificationUnreadCount": {
+      "method": "GET",
+      "path": "/api/mobile/notifications/unread-count",
+      "authenticated": true
+    },
+    "notificationRead": {
+      "method": "PATCH",
+      "path": "/api/mobile/notifications/{id}/read",
+      "authenticated": true
+    },
+    "notificationsReadAll": {
+      "method": "PATCH",
+      "path": "/api/mobile/notifications/read-all",
+      "authenticated": true
+    },
+    "profile": {
+      "method": "GET",
+      "path": "/api/mobile/profile",
+      "authenticated": true
+    },
+    "profileUpdate": {
+      "method": "PUT",
+      "path": "/api/mobile/profile",
+      "authenticated": true
+    },
+    "profileInfoAnswers": {
+      "method": "GET",
+      "path": "/api/mobile/profile/info-answers",
+      "authenticated": true
+    },
+    "profileInfoAnswerUpsert": {
+      "method": "PUT",
+      "path": "/api/mobile/profile/info-answers",
+      "authenticated": true
+    },
+    "profilePassword": {
+      "method": "PUT",
+      "path": "/api/mobile/profile/password",
+      "authenticated": true
+    },
+    "countries": {
+      "method": "GET",
+      "path": "/api/lookup/countries",
+      "authenticated": false
+    },
+    "cities": {
+      "method": "GET",
+      "path": "/api/lookup/cities",
+      "authenticated": false
+    },
+    "caseCategories": {
+      "method": "GET",
+      "path": "/api/lookup/case-categories",
+      "authenticated": false
+    },
+    "campaignTypes": {
+      "method": "GET",
+      "path": "/api/lookup/campaign-types",
+      "authenticated": false
+    },
+    "mediaUpload": {
+      "method": "POST",
+      "path": "/api/media",
+      "authenticated": false,
+      "contentType": "multipart/form-data"
+    },
+    "mediaByOwner": {
+      "method": "GET",
+      "path": "/api/media",
+      "authenticated": false,
+      "query": [
+        "ownerType",
+        "ownerId"
+      ]
+    },
+    "mediaDelete": {
+      "method": "DELETE",
+      "path": "/api/media/{id}",
+      "authenticated": true
+    },
+    "charityLookupBySubdomain": {
+      "method": "GET",
+      "path": "/api/charities/lookup",
+      "authenticated": false,
+      "query": [
+        "subdomain"
+      ]
+    },
+    "version": {
+      "method": "GET",
+      "path": "/api/version",
+      "authenticated": false
+    },
+    "caseCategoryById": {
+      "method": "GET",
+      "path": "/api/lookup/case-categories/{id}",
+      "authenticated": false
+    },
+    "campaignTypeById": {
+      "method": "GET",
+      "path": "/api/lookup/campaign-types/{id}",
+      "authenticated": false
+    }
+  },
+  "knownBackendOpenQuestions": [
+    "Benefit type question endpoint/shape is not documented.",
+    "Notification referenceId semantics by notification type are not documented.",
+    "Server-side search/filter parameters are not documented; paging only is confirmed.",
+    "Profile image update after registration is not documented.",
+    "Bank account / IBAN for BankTransfer donations is not exposed by any endpoint and is not a field on Charity or Center; the donor is expected to obtain it out of band (BACKEND_ANSWERS.md #1) - product decision still open.",
+    "There is no GET /api/mobile/donations/{id}; single-donation detail is emulated by scanning the paged history. Backend offered to add it on request (BACKEND_ANSWERS.md #3)."
+  ],
+  "resolvedBackendQuestions": [
+    "RESOLVED 2026-08-23: proof upload uses form field 'files', donation create uses 'attachments' (BACKEND_ANSWERS.md #2) - app already matched.",
+    "RESOLVED 2026-08-23: centers cityId/countryId accept the same GUIDs returned by /api/lookup/cities and /api/lookup/countries, no conversion needed (BACKEND_ANSWERS.md #4).",
+    "RESOLVED 2026-08-23: a case donation without caseNeedId is rejected with a validation error; there is no automatic fallback, and the donation type must match the CaseNeedType. The client must force need selection (BACKEND_ANSWERS.md #5).",
+    "RESOLVED 2026-08-23: POST /api/mobile/donations/{id}/confirm-payment never existed by design - payment is always settled manually. Removed from the app; the only path is the proof upload (BACKEND_ANSWERS.md #6).",
+    "RESOLVED 2026-08-23: there is no /charities/{id}/donate shortcut - a direct charity donation goes only through POST /api/mobile/donations with TargetType=Charity(3) + CharityId, as implemented (BACKEND_ANSWERS.md #7)."
+  ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inset so Android 12 splash mask does not clip the real GiveChain logo. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:top="28dp"
+        android:bottom="28dp"
+        android:left="28dp"
+        android:right="28dp"
+        android:drawable="@drawable/launch_logo" />
+</layer-list>
