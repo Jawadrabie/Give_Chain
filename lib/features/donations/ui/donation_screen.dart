@@ -1684,7 +1684,8 @@ int _stepsCompleted(DonationResponse item) {
   final transferredDone = item.transferredToCharityAt != null ||
       const {2, 3, 8}.contains(item.status) ||
       (item.status == 7 && item.isPosted);
-  final verifiedDone = item.verifiedAt != null || item.status == 3;
+  final verifiedDone = item.verifiedAt != null ||
+      const {2, 3, 8}.contains(item.status);
   return _leadingTrueCount([
     paymentDone,
     centerDone,
